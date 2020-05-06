@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+      "name": ".NET Core Launch (console)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      // lembrar de trocar a pasta /netcoreapp2.2 pela versão mais recente.
+      "program": "${workspaceFolder}/src/Password.Application/bin/Debug/netcoreapp2.2/Password.Application.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/Password.Application",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": ".NET Core Attach",
+      "type": "coreclr",
+      "request": "attach",
+      "processId": "${command:pickProcess}"
+    }
+  ]
+}

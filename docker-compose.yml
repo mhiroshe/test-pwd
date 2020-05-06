@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+   api:
+     image: password_application
+     build:
+       context: .
+       dockerfile: src/Dockerfile
+     ports:
+       - 5001:5001
+     container_name: password_application
+     restart: always
+     environment:
+       ASPNETCORE_ENVIRONMENT: Production

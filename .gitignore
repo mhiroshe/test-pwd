@@ -1,0 +1,8 @@
+.DS_Store
+.secrets
+.vs
+dist
+build
+node_modules
+[Bb]in
+[Oo]bj
